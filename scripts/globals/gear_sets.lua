@@ -21,7 +21,9 @@ local extraAttackChance = 25
 local nullDamageChance = 15
 local instantCastChance = 15
 
--- {id, {item, ids, in, no, particular, order}, minimum matches required, match type, mods{id, value, modvalue for each additional match, additional whole set bonus}
+-- {id, {item, ids, in, no, particular, order}, minimum matches required, match type,
+-- mods{id, value, modvalue for each additional match, additional whole set bonus}
+
 local GearSets = {
     {
         id = 1,
@@ -264,7 +266,8 @@ local GearSets = {
         matches = 2,
         matchType = matchtype.any,
         mods = {{dsp.mod.SAMBA_DOUBLE_DAMAGE, 1, 1.8, 0}}
-    }, --  Charis Attire +2 Set. Set Bonus: Augments "Samba". Occasionally doubles damage with Samba up. Adds approximately 1-2% per piece past the first.
+    }, --  Charis Attire +2 Set. Set Bonus: Augments "Samba". Occasionally doubles damage with Samba up.
+    -- Adds approximately 1-2% per piece past the first.
     {
         id = 37,
         items = {11076, 11096, 11116, 11136, 11156},
@@ -697,7 +700,8 @@ local GearSets = {
 }
 -- increment id by (number of mods in previous gearset - 1)
 
--- {id, {item, ids, in, no, particular, order}, minimum matches required, match type, mods{id, value, modvalue for each additional match, additional whole set bonus}
+-- {id, {item, ids, in, no, particular, order}, minimum matches required, match type,
+-- mods{id, value, modvalue for each additional match, additional whole set bonus}
 
 local HipsterSets = {
     -- stick the ids of sets that need their own handling here e.g. Rubeus
@@ -877,7 +881,9 @@ Empyrean +2
 11133 -- Aoidos' Rhingrave +2
 11153 -- Aoidos' Cothurnes +2
 -- Set Bonus: Augments Songs
--- Enhancing songs add an attribute bonus that corresponds to the element of the song (i.e. Thunder-based songs add +DEX). The attribute bonus begins at +1 for 2 pieces, increases by 1 for each additional piece, up to +5 for the whole set. For Dark-based songs, there is a bonus of +10 MP for 2 pieces, and increases by 10 for each additional piece.
+-- Enhancing songs add an attribute bonus that corresponds to the element of the song (i.e. Thunder-based songs add +DEX).
+-- The attribute bonus begins at +1 for 2 pieces, increases by 1 for each additional piece, up to +5 for the whole set.
+-- For Dark-based songs, there is a bonus of +10 MP for 2 pieces, and increases by 10 for each additional piece.
 
 --Ferine' Attire +2 Set
 -------------
@@ -887,7 +893,8 @@ Empyrean +2
 11132 -- Ferine Quijotes+2
 11152 -- Ferine Ocreae+2
 -- Set Bonus: Attack occ. varies with pet's HP
--- Occasionally increases damage in direct proportion to the percentage of pet's current HP. At 100% HP, damage is doubled when triggered, at 50% HP, damage increases by 50%, and so on.
+-- Occasionally increases damage in direct proportion to the percentage of pet's current HP.
+-- At 100% HP, damage is doubled when triggered, at 50% HP, damage increases by 50%, and so on.
 -- 5% Proc Rate
 
 --Goetia Attire +2 Set
@@ -898,7 +905,8 @@ Empyrean +2
 11127 -- Goetia Chausses+2
 11147 -- Goetia Sabots+2
 -- Set Bonus: Augments "Conserve MP"
--- Occasionally increases damage of elemental spells when Conserve MP is triggered. Increased amount is proportional to twice the ratio of MP conserved.
+-- Occasionally increases damage of elemental spells when Conserve MP is triggered.
+-- Increased amount is proportional to twice the ratio of MP conserved.
 
 --Mavi Attire +2 Set
 -------------
@@ -919,7 +927,8 @@ Empyrean +2
 11131 -- Bale Flanchard+2
 11151 -- Bale Sollerets+2
 -- Set Bonus: Attack occasionally varies with HP
--- Occasionally increases damage in direct proportion to the percentage of current HP. At 100% HP, damage is doubled when triggered, at 50% HP, damage increases by 50%, and so on.
+-- Occasionally increases damage in direct proportion to the percentage of current HP. At 100% HP,
+-- damage is doubled when triggered, at 50% HP, damage increases by 50%, and so on.
 
 --Lancer's Armor +2 Set
 -------------
@@ -929,7 +938,8 @@ Empyrean +2
 11137 -- Lancer's Cuissots+2
 11157 -- Lancer's Schynbalds+2
 -- Set Bonus: Attack occasionally varies with wyvern's HP.
--- Damage increases proportionate to Wyvern's HP, at 100%, damage is doubled. 2+ pieces required, more pieces increase proc rate. Full +2 set is about a 10% proc rate. (Confirmation needed)
+-- Damage increases proportionate to Wyvern's HP, at 100%, damage is doubled. 2+ pieces required, more pieces increase proc rate.
+-- Full +2 set is about a 10% proc rate. (Confirmation needed)
 
 
 --Cirque Attire +2 Set
@@ -940,7 +950,8 @@ Empyrean +2
 11141 -- Cirque Pantaloni+2
 11161 -- Cirque Scarpe+2
 -- Set Bonus: Attack occasionally varies with automaton's HP.
--- Occasionally increases damage in direct proportion to the percentage of Automaton's current HP. At 100% HP, damage is doubled when triggered, at 50% HP, damage increases by 50%, and so on.
+-- Occasionally increases damage in direct proportion to the percentage of Automaton's current HP.
+-- At 100% HP, damage is doubled when triggered, at 50% HP, damage increases by 50%, and so on.
 
 --Estoqueur's Attire +2 Set
 -------------
@@ -950,7 +961,10 @@ Empyrean +2
 11128 -- Estoqueur's Fuseau+2
 11148 -- Estoqueur's Houseaux+2
 -- Set Bonus: Augments "Composure"
--- Enhances duration of Enhancing Magic cast on OTHERS while under the effect of Composure by 10% for the first 2 pieces, and 15% for any additional pieces thereafter, up to 35% increase for 4 pieces and 50% for all 5 pieces. The "Increases enhancing magic effect duration" of the Estoqueur's Cape, Estoqueur's Houseaux +1 and Estoqueur's Houseaux +2 is multiplicative to this total.
+-- Enhances duration of Enhancing Magic cast on OTHERS while under the effect of Composure by 10% for the first 2 pieces,
+-- and 15% for any additional pieces thereafter, up to 35% increase for 4 pieces and 50% for all 5 pieces.
+-- The "Increases enhancing magic effect duration" of the Estoqueur's Cape, Estoqueur's Houseaux +1 and
+-- Estoqueur's Houseaux +2 is multiplicative to this total.
 
 --Caller's Attire +2 Set
 -------------
@@ -960,7 +974,8 @@ Empyrean +2
 11138 -- Caller's Spats+2
 11158 -- Caller's Pigaches+2
 -- Set Bonus: Augments "Blood Boon"
--- Occasionally increases damage of Blood Pacts when Blood Boon is triggered. Increased amount is proportional to the ratio of MP conserved.
+-- Occasionally increases damage of Blood Pacts when Blood Boon is triggered.
+-- Increased amount is proportional to the ratio of MP conserved.
 
 ]]
 --
